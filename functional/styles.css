@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-cover {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.game-cover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resize the image to cover the entire container */
+    
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(90, 37, 192);
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color:blue;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.game {
+    background: url("http://i1.faceprep.in/prograd-junior/game-inside-bg.png") no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    width: 80%;
+    height: auto;
+}
+
+.play {
+    
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+    position: absolute; /* Position the container absolutely */
+    top: 70%; /* Move the container 50% from the top */
+    left: 40%; /* Move the container 50% from the left */
+    transform: translate(-50%, -50%); 
+    
+    
+}
+.play img {
+    max-width: 100%; /* Set maximum width to 100% of the container */
+    max-height: 100%; /* Set maximum height to 100% of the container */
+    display: block; /* Ensure the image behaves correctly */
+    margin: auto; /* Center the image inside its container */
+}
+.play span {
+    position: absolute; /* Position the text absolutely */
+    top: 0; /* Position the text at the top of the container */
+    left: 50%; /* Position the text horizontally centered */
+    transform: translateX(-50%); /* Center the text horizontally */
+    font-family: 'Poppins', sans-serif;
+    color: rgb(90, 37, 192);
+    font-size: 18px;
+    font-weight: bold;
+}
+.play1 {
+    
+    cursor: pointer;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+    position: absolute; /* Position the container absolutely */
+    top: 90%; /* Move the container 50% from the top */
+    left: 80%; /* Move the container 50% from the left */
+    transform: translate(-50%, -50%); 
+    
+    
+}
+.play1 img {
+    max-width: 100%; /* Set maximum width to 100% of the container */
+    max-height: 100%; /* Set maximum height to 100% of the container */
+    display: block; /* Ensure the image behaves correctly */
+    margin: auto; /* Center the image inside its container */
+}
+.play1 span {
+    font-family: 'Poppins', sans-serif; /* Use Poppins font for the text */
+    color:white; /* Set the text color */
+    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: bold; /* Add bold styling */
+    margin-right: 10px; /
+}
+
+#numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-holder {
+    background-color: white;
+    color: black;
+    width: 25vw;
+    max-width: 200px;
+    max-height: 200px;
+    height: 25vw;
+    border: 2px solid #EE2689;
+}
+
+#instructions {
+    font-size: 6vw;
+}
+
+#numbers * {
+    font-size: 4vw;
+}
+
+#buttons * {
+    width: 25%;
+    min-width: 120px;
+    cursor: pointer;
+}
+
+#timer {
+    width: 10%;
+    position: absolute;
+    top: 5vh;
+    right: 5vh;
+    font-size: 6vw;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+#game-over-text {
+    width: 50%;
+    max-width: 500px;
+}
+
+#score-box {
+    font-size: 6vw;
+    border: 1px solid white;
+    padding: 2vw;
+}
+
+.operators {
+    font-size: 3em;
+    border: 1px solid #ee2689;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
